@@ -33,7 +33,7 @@ const rawJson = {
           "num2": 4,
           "num3": 15,
           "num4": 16,
-          "num5": 1,
+          "num5": 3,
         },
         {
           "date": "4",
@@ -494,7 +494,7 @@ const rawJson = {
         },
         {
           "date": "18",
-         "percent": 0,
+          "percent": 0,
           "num0": 0,
           "num1": 20,
           "num2": 0,
@@ -514,7 +514,7 @@ const rawJson = {
         },
         {
           "date": "20",
-         "percent": 0,
+          "percent": 0,
           "num0": 0,
           "num1": 20,
           "num2": 0,
@@ -534,7 +534,7 @@ const rawJson = {
         },
         {
           "date": "22",
-         "percent": 0,
+          "percent": 0,
           "num0": 0,
           "num1": 20,
           "num2": 0,
@@ -544,7 +544,7 @@ const rawJson = {
         },
         {
           "date": "23",
-        "percent": 0,
+          "percent": 0,
           "num0": 0,
           "num1": 20,
           "num2": 0,
@@ -554,7 +554,7 @@ const rawJson = {
         },
         {
           "date": "24",
-         "percent": 0,
+          "percent": 0,
           "num0": 0,
           "num1": 20,
           "num2": 0,
@@ -574,7 +574,7 @@ const rawJson = {
         },
         {
           "date": "26",
-         "percent": 0,
+          "percent": 0,
           "num0": 0,
           "num1": 20,
           "num2": 0,
@@ -584,7 +584,7 @@ const rawJson = {
         },
         {
           "date": "27",
-         "percent": 0,
+          "percent": 0,
           "num0": 0,
           "num1": 20,
           "num2": 0,
@@ -594,7 +594,7 @@ const rawJson = {
         },
         {
           "date": "28",
-         "percent": 0,
+          "percent": 0,
           "num0": 0,
           "num1": 20,
           "num2": 0,
@@ -604,7 +604,7 @@ const rawJson = {
         },
         {
           "date": "29",
-         "percent": 0,
+          "percent": 0,
           "num0": 0,
           "num1": 20,
           "num2": 0,
@@ -614,7 +614,7 @@ const rawJson = {
         },
         {
           "date": "30",
-         "percent": 0,
+          "percent": 0,
           "num0": 0,
           "num1": 20,
           "num2": 0,
@@ -624,7 +624,7 @@ const rawJson = {
         },
         {
           "date": "31",
-         "percent": 0,
+          "percent": 0,
           "num0": 0,
           "num1": 20,
           "num2": 0,
@@ -672,17 +672,17 @@ const rawJson = {
         {
           "date": "4",
           "percent": 74,
-           "num0": 0,
+          "num0": 0,
           "num1": 6,
           "num2": 2,
           "num3": 11,
-          "num4":11,
+          "num4": 11,
           "num5": 0
         },
         {
           "date": "5",
           "percent": 49,
-           "num0": 0,
+          "num0": 0,
           "num1": 6,
           "num2": 7,
           "num3": 5,
@@ -692,7 +692,7 @@ const rawJson = {
         {
           "date": "6",
           "percent": 35,
-           "num0": 1,
+          "num0": 1,
           "num1": 5,
           "num2": 13,
           "num3": 6,
@@ -772,7 +772,7 @@ const rawJson = {
         {
           "date": "14",
           "percent": 0,
-           "num0": 0,
+          "num0": 0,
           "num1": 6,
           "num2": 24,
           "num3": 0,
@@ -782,7 +782,7 @@ const rawJson = {
         {
           "date": "15",
           "percent": 0,
-           "num0": 0,
+          "num0": 0,
           "num1": 6,
           "num2": 24,
           "num3": 0,
@@ -792,7 +792,7 @@ const rawJson = {
         {
           "date": "16",
           "percent": 0,
-           "num0": 0,
+          "num0": 0,
           "num1": 6,
           "num2": 24,
           "num3": 0,
@@ -802,7 +802,7 @@ const rawJson = {
         {
           "date": "17",
           "percent": 0,
-           "num0": 0,
+          "num0": 0,
           "num1": 6,
           "num2": 24,
           "num3": 0,
@@ -822,7 +822,7 @@ const rawJson = {
         {
           "date": "19",
           "percent": 0,
-           "num0": 0,
+          "num0": 0,
           "num1": 6,
           "num2": 24,
           "num3": 0,
@@ -832,7 +832,7 @@ const rawJson = {
         {
           "date": "20",
           "percent": 0,
-           "num0": 0,
+          "num0": 0,
           "num1": 6,
           "num2": 24,
           "num3": 0,
@@ -842,7 +842,7 @@ const rawJson = {
         {
           "date": "21",
           "percent": 0,
-           "num0": 0,
+          "num0": 0,
           "num1": 6,
           "num2": 24,
           "num3": 0,
@@ -872,7 +872,7 @@ const rawJson = {
         {
           "date": "24",
           "percent": 0,
-           "num0": 0,
+          "num0": 0,
           "num1": 6,
           "num2": 24,
           "num3": 0,
@@ -882,7 +882,7 @@ const rawJson = {
         {
           "date": "25",
           "percent": 0,
-           "num0": 0,
+          "num0": 0,
           "num1": 6,
           "num2": 24,
           "num3": 0,
@@ -892,7 +892,7 @@ const rawJson = {
         {
           "date": "26",
           "percent": 0,
-           "num0": 1,
+          "num0": 1,
           "num1": 5,
           "num2": 24,
           "num3": 0,
@@ -902,7 +902,7 @@ const rawJson = {
         {
           "date": "27",
           "percent": 0,
-           "num0": 3,
+          "num0": 3,
           "num1": 3,
           "num2": 24,
           "num3": 0,
@@ -912,7 +912,7 @@ const rawJson = {
         {
           "date": "28",
           "percent": 0,
-           "num0": 2,
+          "num0": 2,
           "num1": 4,
           "num2": 24,
           "num3": 0,
@@ -922,7 +922,7 @@ const rawJson = {
         {
           "date": "29",
           "percent": 0,
-            "num0": 3,
+          "num0": 3,
           "num1": 3,
           "num2": 24,
           "num3": 0,
@@ -932,7 +932,7 @@ const rawJson = {
         {
           "date": "30",
           "percent": 0,
-           "num0": 3,
+          "num0": 3,
           "num1": 3,
           "num2": 24,
           "num3": 0,
@@ -942,7 +942,7 @@ const rawJson = {
         {
           "date": "31",
           "percent": 0,
-           "num0": 3,
+          "num0": 3,
           "num1": 3,
           "num2": 24,
           "num3": 0,
@@ -1109,7 +1109,7 @@ const rawJson = {
         {
           "date": "16",
           "percent": 0,
-         "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1119,7 +1119,7 @@ const rawJson = {
         {
           "date": "17",
           "percent": 0,
-         "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1129,7 +1129,7 @@ const rawJson = {
         {
           "date": "18",
           "percent": 0,
-         "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1139,7 +1139,7 @@ const rawJson = {
         {
           "date": "19",
           "percent": 0,
-        "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1149,7 +1149,7 @@ const rawJson = {
         {
           "date": "20",
           "percent": 0,
-         "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1159,7 +1159,7 @@ const rawJson = {
         {
           "date": "21",
           "percent": 0,
-         "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1169,7 +1169,7 @@ const rawJson = {
         {
           "date": "22",
           "percent": 0,
-        "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1179,7 +1179,7 @@ const rawJson = {
         {
           "date": "23",
           "percent": 0,
-         "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1189,7 +1189,7 @@ const rawJson = {
         {
           "date": "24",
           "percent": 0,
-       "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1199,7 +1199,7 @@ const rawJson = {
         {
           "date": "25",
           "percent": 0,
-         "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1209,7 +1209,7 @@ const rawJson = {
         {
           "date": "26",
           "percent": 0,
-         "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1219,7 +1219,7 @@ const rawJson = {
         {
           "date": "27",
           "percent": 0,
-         "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1229,7 +1229,7 @@ const rawJson = {
         {
           "date": "28",
           "percent": 0,
-         "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1239,7 +1239,7 @@ const rawJson = {
         {
           "date": "29",
           "percent": 0,
-        "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1249,7 +1249,7 @@ const rawJson = {
         {
           "date": "30",
           "percent": 0,
-         "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,
@@ -1259,7 +1259,7 @@ const rawJson = {
         {
           "date": "31",
           "percent": 0,
-        "num0": 0,
+          "num0": 0,
           "num1": 3,
           "num2": 7,
           "num3": 0,

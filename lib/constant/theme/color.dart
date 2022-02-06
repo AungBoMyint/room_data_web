@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-final topBarBackgroundColor = Colors.cyanAccent.shade100.withOpacity(0.3);
+final topBarBackgroundColor = Colors.cyanAccent.shade100.withOpacity(0.5);
 const topTitleTextColor = Color.fromRGBO(130, 136, 135, 1);
 const dayTextColor = Color.fromRGBO(185, 185, 186, 1);
 final roomTypeIconColor = Colors.blue;

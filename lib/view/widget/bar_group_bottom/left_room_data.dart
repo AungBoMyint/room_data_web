@@ -66,7 +66,7 @@ class LeftRoomData extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   style: Theme.of(context).textTheme.headline2?.copyWith(
                         color: dayTextColor,
-                        fontWeight: FontWeight.normal,
+                        fontWeight: FontWeight.bold,
                         fontSize: 16,
                       )),
 
@@ -75,7 +75,7 @@ class LeftRoomData extends StatelessWidget {
               //TypeCircle
               Container(
                 alignment: Alignment.center,
-                height: 150,
+                height: 180,
                 width: 200,
                 decoration: BoxDecoration(
                   color: topBarBackgroundColor,
@@ -90,7 +90,7 @@ class LeftRoomData extends StatelessWidget {
                         style: Theme.of(context).textTheme.headline1,
                       ),
                       //Space
-                      const SizedBox(height: 10),
+                      const SizedBox(height: 30),
                       //Type Text
                       Text(
                         typeRoomOrBed,
