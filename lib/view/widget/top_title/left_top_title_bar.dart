@@ -8,16 +8,13 @@ class LeftTopTitleBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.white),
+        border: Border.all(color: Colors.grey.shade300, width: 1),
       ),
       width: width,
-      child: const Center(
-        child: Text("Room/Bed",
-            style: TextStyle(
-              color: Colors.grey,
-              fontSize: 25,
-              fontWeight: FontWeight.bold,
-            )),
+      alignment: Alignment.center,
+      child: Text(
+        "Room/Bed",
+        style: Theme.of(context).textTheme.headline1,
       ),
     );
   }

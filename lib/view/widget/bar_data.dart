@@ -4,19 +4,16 @@ import 'package:stayria_frontend/view/widget/top_title/top_bar_title.dart';
 
 class BarData extends StatelessWidget {
   final TopBarTitle topBarTitle;
-  final List<BarGroupData> groupData;
+  final BarGroupData groupData;
   const BarData({Key? key, required this.topBarTitle, required this.groupData})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return Column(
       children: [
         topBarTitle,
-        for (var item in groupData) ...[
-          //BarGroupData
-          item,
-        ]
+        Expanded(child: groupData),
       ],
     );
   }

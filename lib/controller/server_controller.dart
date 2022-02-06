@@ -1,27 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:linked_scroll_controller/linked_scroll_controller.dart';
-import 'package:stayria_frontend/constant/mock_json.dart';
-import 'package:stayria_frontend/model/data_model.dart';
 
 class ServerController extends GetxController {
-  late DataModal dataModal;
   late LinkedScrollControllerGroup _groupControllers;
 
   @override
   void onInit() {
     _groupControllers = LinkedScrollControllerGroup();
-    fetchData();
     super.onInit();
   }
 
   //Add to Scroll Controller
   ScrollController addAndGetScrollControllerGroupd() {
     return _groupControllers.addAndGet();
-  }
-
-  void fetchData() {
-    dataModal = DataModal.fromJson(rawJson);
   }
 
   //

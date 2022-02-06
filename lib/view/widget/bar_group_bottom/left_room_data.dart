@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:stayria_frontend/constant/theme/color.dart';
 
 class LeftRoomData extends StatelessWidget {
   final double width;
+  final double height;
   final Widget typeIcon;
   final String typeTitle;
   final String typeDescription;
@@ -10,6 +12,7 @@ class LeftRoomData extends StatelessWidget {
   const LeftRoomData({
     Key? key,
     required this.width,
+    required this.height,
     required this.typeIcon,
     required this.typeTitle,
     required this.typeDescription,
@@ -21,11 +24,10 @@ class LeftRoomData extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         decoration: BoxDecoration(
-          color: Colors.red,
-          border: Border.all(color: Colors.white),
+          border: Border.all(color: Colors.grey.shade300, width: 1),
         ),
         width: width,
-        height: 300,
+        height: height,
         child:
 
             ///Right Bar
@@ -34,60 +36,68 @@ class LeftRoomData extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               //Top Room Type
-              Row(
-                children: [
-                  //Type Icon Room (or) Bed
-                  typeIcon,
-                  //Type Title
-                  Expanded(
-                    child: Text(
-                      typeTitle,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                      ),
+              SingleChildScrollView(
+                child: Row(
+                  children: [
+                    //Type Icon Room (or) Bed
+                    typeIcon,
+                    //Space
+                    const SizedBox(width: 10),
+                    //Type Title   //Description
+                    Container(
+                      color: Colors.blue,
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("$typeTitle-$typeDescription",
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style:
+                              Theme.of(context).textTheme.headline2?.copyWith(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.normal,
+                                  )),
                     ),
-                  ),
-                ],
-              ),
-              //Description
-              Text(
-                typeDescription,
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 18,
+                  ],
                 ),
               ),
+              //Space for Inventory Description
+              const SizedBox(height: 20),
+              Text("Physical Inventory",
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                        color: dayTextColor,
+                        fontWeight: FontWeight.normal,
+                        fontSize: 16,
+                      )),
+
+              //Space
+              const SizedBox(height: 10),
               //TypeCircle
               Container(
-                height: 100,
+                alignment: Alignment.center,
+                height: 150,
                 width: 200,
-                decoration: const BoxDecoration(
-                  color: Colors.blue,
+                decoration: BoxDecoration(
+                  color: topBarBackgroundColor,
                   shape: BoxShape.circle,
                 ),
-                child: Align(
-                  alignment: Alignment.center,
-                  child: Column(children: [
-                    //Total Item
-                    Text(
-                      "$totalItems",
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      //Total Item
+                      Text(
+                        "$totalItems",
+                        style: Theme.of(context).textTheme.headline1,
                       ),
-                    ),
-                    //Type Text
-                    Text(
-                      typeRoomOrBed,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
+                      //Space
+                      const SizedBox(height: 10),
+                      //Type Text
+                      Text(
+                        typeRoomOrBed,
+                        style: Theme.of(context).textTheme.headline2,
                       ),
-                    ),
-                  ]),
-                ),
-              )
+                    ]),
+              ),
             ],
           ),
         ));
