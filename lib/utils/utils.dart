@@ -7,6 +7,9 @@ double getPercentageDouble(
 }
 
 int getDay({required String dateTime}) {
+  //We will change this method when fetching from remote server
+  /*final date = DateTime.tryParse("20141131");
+  return date?.day ?? 0;*/
   return int.parse(dateTime);
 }
 
