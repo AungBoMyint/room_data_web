@@ -20,8 +20,7 @@ class RightRoomDataList extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    final percentY = y - 15;
-    print("percentHeight: $percentY");
+    final percentY = y - 15; //height for all data room except sold blue data
     return SizedBox(
       height: y,
       child: ListView(
@@ -30,7 +29,6 @@ class RightRoomDataList extends HookWidget {
         scrollDirection: Axis.horizontal,
         children: List.generate(daysOfMonth, (index) {
           if (roomDetailMap.containsKey("${index + 1}")) {
-            print("***********True****************");
             //each item Y positioned by Percentage
             final eachRoomDetial = roomDetailMap["${index + 1}"];
             final outOfOrderHeight = getPercentageDouble(
@@ -60,25 +58,15 @@ class RightRoomDataList extends HookWidget {
             );
             final totalHeight = outOfOrderHeight +
                 soldOnlineHeight +
-                soldHeight + 
+                soldHeight +
                 availableHeight +
-                specialHeight;//For Last Sold Blue
-            final remainHeight = percentY - totalHeight;  
+                specialHeight; //For Last Sold Blue
+            final remainHeight = percentY - totalHeight;
 
             ///
             return SingleChildScrollView(
               child: Column(
                 children: [
-                  //Out of Order Data
-                  /* eachRoomDetial.overBooked > 0 ? cellContainer(
-                            outOfOrderColor,
-                            getPercentageDouble(
-                              number: 1, 
-                              totalNumber: total, 
-                              size: percentY,
-                              ),
-                            "${eachRoomDetial.overBooked}",
-                          ) : const SizedBox(height: 0),*/
                   //Up Data
                   Align(
                     alignment: Alignment.topCenter,
@@ -101,9 +89,10 @@ class RightRoomDataList extends HookWidget {
                                   soldOnlineHeight,
                               child: cellContainer(
                                 soldColor,
-                                totalHeight < percentY ? soldHeight + remainHeight:
-                                soldHeight,
-                               //Sure the last blue will fill required height
+                                totalHeight < percentY
+                                    ? soldHeight + remainHeight
+                                    : soldHeight,
+                                //Sure the last blue will fill required height
                                 //Upon situation.
                                 "${eachRoomDetial!.sold}",
                               ),

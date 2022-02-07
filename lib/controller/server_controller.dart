@@ -1,21 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-import 'package:linked_scroll_controller/linked_scroll_controller.dart';
 
 class ServerController extends GetxController {
-  late LinkedScrollControllerGroup _groupControllers;
-
-  @override
-  void onInit() {
-    _groupControllers = LinkedScrollControllerGroup();
-    super.onInit();
-  }
-
-  //Add to Scroll Controller
-  ScrollController addAndGetScrollControllerGroupd() {
-    return _groupControllers.addAndGet();
-  }
-
   //
   //Getting Days with Short Name in a Month
   List<String> getDaysInMonth({required int totalDay}) {

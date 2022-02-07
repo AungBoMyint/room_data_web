@@ -6,8 +6,6 @@ import 'package:stayria_frontend/view/page/main_graph_page.dart';
 import 'controller/server_controller.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  Get.put(ServerController());
   runApp(const MyApp());
 }
 
@@ -17,6 +15,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    Get.put(ServerController());
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',

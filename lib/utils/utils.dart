@@ -18,6 +18,5 @@ Map<String, RoomDetail> makCurrentRoomTypeRoomDetailMap(
     final dateIndex = getDay(dateTime: item.date);
     resultMap.putIfAbsent("$dateIndex", () => item);
   }
-  print("Result Map: $resultMap");
   return resultMap;
 }

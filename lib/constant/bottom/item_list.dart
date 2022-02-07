@@ -26,6 +26,6 @@ final List<Item> itemList = [
       text: "Closed",
       child: Text(
         "🚫",
-        style: TextStyle(fontSize: 28),
+        style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
       )),
 ];
