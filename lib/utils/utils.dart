@@ -7,8 +7,7 @@ double getPercentageDouble(
 }
 
 int getDay({required String dateTime}) {
-  final date = DateTime.tryParse(dateTime);
-  return date?.day ?? 0;
+  return int.parse(dateTime);
 }
 
 //Make Current RoomType's RoomMap

@@ -1,27 +1,38 @@
 import 'package:flutter/material.dart';
+import 'package:stayria_frontend/model/room_detail.dart';
 import 'package:stayria_frontend/view/widget/top_title/left_top_title_bar.dart';
 import 'package:stayria_frontend/view/widget/top_title/right_top_title_bar.dart';
 
-class TopBarTitle extends StatelessWidget with PreferredSizeWidget {
+class TopBarTitle extends StatelessWidget {
+  final ScrollController rightBarScrollController;
   final List<String> daysList;
-  const TopBarTitle({Key? key, required this.daysList}) : super(key: key);
+  final List<RoomDetail> roomDetailsListForPercentage;
+  final Color backgroundColor;
+  const TopBarTitle({
+    Key? key,
+    required this.daysList,
+    required this.rightBarScrollController,
+    required this.backgroundColor,
+    required this.roomDetailsListForPercentage,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-        color: Colors.tealAccent,
+        color: backgroundColor,
         height: 100,
         child: Row(
           children: [
-            LeftTopTitleBar(width: size.width * 0.3),
+            LeftTopTitleBar(width: size.width * 0.2),
             Expanded(
-              child: RightTopTitleBarList(daysList: daysList),
+              child: RightTopTitleBarList(
+                daysList: daysList,
+                rightBarScrollController: rightBarScrollController,
+                roomDetailsList: roomDetailsListForPercentage,
+              ),
             ),
           ],
         ));
   }
-
-  @override
-  Size get preferredSize => const Size(double.infinity, 100);
 }
